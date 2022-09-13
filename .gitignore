@@ -73,3 +73,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+#Plugins
+/[Aa]ssets/DynamicBone/
+/[Aa]ssets/eToile/
+/[Aa]ssets/Pixel Play/
+/[Aa]ssets/StandaloneFileBrowser/
+Assets/Pixel Play.meta
+Assets/StandaloneFileBrowser.meta
+Assets/eToile.meta
+Assets/DynamicBone.meta
