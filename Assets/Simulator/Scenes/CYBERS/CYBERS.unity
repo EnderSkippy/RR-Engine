@@ -2084,6 +2084,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1856217269}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 71eacc5d976817846a3398f247c418d7, type: 3}
@@ -2151,6 +2152,7 @@ PrefabInstance:
       value: 1-Stage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 71eacc5d976817846a3398f247c418d7, type: 3}
 --- !u!4 &98266178 stripped
 Transform:
@@ -3187,14 +3189,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183712898}
-  m_LocalRotation: {x: 0.99429995, y: -0.0062507065, z: 0.0050871084, w: 0.10631395}
-  m_LocalPosition: {x: 3.6153965, y: 2.943354, z: 3.2397652}
+  m_LocalRotation: {x: 0.9968908, y: -0.0053456775, z: -0.0043600737, w: 0.078493394}
+  m_LocalPosition: {x: 3.6153965, y: 2.742917, z: 3.2397652}
   m_LocalScale: {x: 0.8673363, y: 0.86733633, z: 0.86733633}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1050705486}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 167.791, y: -0.51501465, z: 0.6649933}
+  m_LocalEulerAnglesHint: {x: 170.999, y: 0.5529785, z: 0.6580048}
 --- !u!114 &183712900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3489,6 +3491,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -3707,6 +3710,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -5779,6 +5783,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -7336,6 +7341,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -10237,6 +10243,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 232267900}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d90b4e662fb4e984c9a59a525cffba12, type: 3}
@@ -10304,6 +10311,7 @@ PrefabInstance:
       value: Cyber Balcony
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d90b4e662fb4e984c9a59a525cffba12, type: 3}
 --- !u!4 &634576414 stripped
 Transform:
@@ -15328,14 +15336,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110651355}
-  m_LocalRotation: {x: 0.99202716, y: -0.009743084, z: 0.05137012, w: 0.11466626}
-  m_LocalPosition: {x: 3.4114952, y: 2.9429173, z: 3.2397573}
+  m_LocalRotation: {x: 0.9966866, y: -0.0048949923, z: 0.020641223, w: 0.07852306}
+  m_LocalPosition: {x: 3.4114952, y: 2.742917, z: 3.2397573}
   m_LocalScale: {x: 0.8673363, y: 0.86733633, z: 0.86733633}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1050705486}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 166.791, y: -5.877014, z: 0.44400024}
+  m_LocalEulerAnglesHint: {x: 170.983, y: -2.343018, z: 0.378006}
 --- !u!114 &1110651357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17286,6 +17294,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 559805929}
     m_Modifications:
     - target: {fileID: 1595808682013958733, guid: 7acf20c26d3308d4a933cbaf4a89948c, type: 3}
@@ -21188,6 +21197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 829633218951942376, guid: 7acf20c26d3308d4a933cbaf4a89948c, type: 3}
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7acf20c26d3308d4a933cbaf4a89948c, type: 3}
 --- !u!4 &1353782686 stripped
 Transform:
@@ -23578,6 +23588,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -25195,6 +25206,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -25833,20 +25845,24 @@ Light:
   m_ShadowAngle: 0
 --- !u!21 &1801320210
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader Graphs/DefaultCompositionGraph
   m_Shader: {fileID: -6465566751694194690, guid: 7bcb43ba8caadd644a59a14a842a0f00, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -26315,6 +26331,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -28360,6 +28377,7 @@ MonoBehaviour:
   taaMotionVectorRejection: 0
   taaAntiHistoryRinging: 0
   taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
@@ -29391,6 +29409,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 559805929}
     m_Modifications:
     - target: {fileID: 2730717641237170491, guid: 7317c0414aa0345428649f966e7f42b6, type: 3}
@@ -29490,6 +29509,7 @@ PrefabInstance:
       value: yflow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7317c0414aa0345428649f966e7f42b6, type: 3}
 --- !u!114 &2045854398 stripped
 MonoBehaviour:
