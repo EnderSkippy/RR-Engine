@@ -21,12 +21,23 @@ public class PlayMenuManager : MonoBehaviour
     public Text speedText;
     public Slider playSlider;
     int endtexttimer = 0;
+    int channelCheck = 1;
     // Start is called before the first frame update
     public GameObject[] keepSizedList;
+
+
 
     // Update is called once per frame
     void LateUpdate()
     {
+        if (playUI.manager.speakerClip.channels == 1)
+        {
+            channelCheck = 2;
+        }
+        else
+        {
+            channelCheck = 1;
+        }
         if (playUI.manager.playMovements)
         {
             speedText.text = playUI.manager.referenceSpeaker.pitch + "x";
@@ -107,7 +118,7 @@ public class PlayMenuManager : MonoBehaviour
             }
             else
             {
-                playSlider.value = playUI.manager.referenceSpeaker.time / (playUI.manager.referenceSpeaker.clip.length * (float)playUI.manager.referenceSpeaker.clip.channels) * 200;
+                playSlider.value = playUI.manager.referenceSpeaker.time / (playUI.manager.speakerClip.length * (float)playUI.manager.speakerClip.channels) * 200 / channelCheck;
             }
 
             if (nowtimer <= (float)(endtexttimer))
@@ -126,7 +137,7 @@ public class PlayMenuManager : MonoBehaviour
         }
         else
         {
-            playUI.manager.referenceSpeaker.time = (section / 10.0f) * (playUI.manager.referenceSpeaker.clip.length / (float)playUI.manager.referenceSpeaker.clip.channels) * 2;
+            playUI.manager.referenceSpeaker.time = (section / 10.0f) * (playUI.manager.speakerClip.length / (float)playUI.manager.speakerClip.channels) * 2 / channelCheck;
         }
 
         playUI.manager.syncTvsAndSpeakers.Invoke();
@@ -153,7 +164,7 @@ public class PlayMenuManager : MonoBehaviour
             }
             else
             {
-                endtexttimer = (int)(playUI.manager.referenceSpeaker.clip.length * (float)playUI.manager.referenceSpeaker.clip.channels) / 2;
+                endtexttimer = (int)(playUI.manager.speakerClip.length * (float)playUI.manager.speakerClip.channels) / 2 * channelCheck;
             }
             endTimeText.text = Mathf.Floor(endtexttimer / 60.0f).ToString("00") + ":" + (endtexttimer % 60).ToString("00");
 
@@ -202,7 +213,7 @@ public class PlayMenuManager : MonoBehaviour
                     child.transform.localScale = Vector3.zero;
                 }
             }
-            endtexttimer = (int)(playUI.manager.referenceSpeaker.clip.length * playUI.manager.referenceSpeaker.clip.channels) / 2;
+            endtexttimer = (int)(playUI.manager.speakerClip.length * playUI.manager.speakerClip.channels) * 2 / channelCheck;
             endTimeText.text = Mathf.Floor(endtexttimer / 60.0f).ToString("00") + ":" + (endtexttimer % 60).ToString("00");
 
             string[] combined = Path.GetFileName(playUI.manager.showtapeSegmentPaths[playUI.manager.currentShowtapeSegment]).Split(new string[] { " - " }, StringSplitOptions.None);

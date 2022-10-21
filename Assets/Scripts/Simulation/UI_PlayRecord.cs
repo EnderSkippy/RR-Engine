@@ -57,6 +57,7 @@ public class UI_PlayRecord : MonoBehaviour
     }
 
     public UI_ShowtapeManager manager;
+    int channelCheck;
 
 
     void Awake()
@@ -90,7 +91,15 @@ public class UI_PlayRecord : MonoBehaviour
         //Advances the tutorial if it is active
         if (manager.recordMovements && manager.referenceSpeaker.clip != null)
         {
-            if (manager.referenceSpeaker.time >= (manager.referenceSpeaker.clip.length * manager.referenceSpeaker.clip.channels / 2))
+            if (manager.speakerClip.channels == 1)
+            {
+                channelCheck = 2;
+            }
+            else
+            {
+                channelCheck = 1;
+            }
+            if (manager.referenceSpeaker.time >= (manager.speakerClip.length * manager.speakerClip.channels / 2 * channelCheck))
             {
                 GameObject tt = GameObject.Find("Tutorial");
                 if (tt != null)
