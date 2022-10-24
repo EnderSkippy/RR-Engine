@@ -164,7 +164,7 @@ public class PlayMenuManager : MonoBehaviour
             }
             else
             {
-                endtexttimer = (int)(playUI.manager.speakerClip.length * (float)playUI.manager.speakerClip.channels) / 2 * channelCheck;
+                endtexttimer = (int)(playUI.manager.speakerClip.length);
             }
             endTimeText.text = Mathf.Floor(endtexttimer / 60.0f).ToString("00") + ":" + (endtexttimer % 60).ToString("00");
 
@@ -213,7 +213,7 @@ public class PlayMenuManager : MonoBehaviour
                     child.transform.localScale = Vector3.zero;
                 }
             }
-            endtexttimer = (int)(playUI.manager.speakerClip.length * playUI.manager.speakerClip.channels) * 2 / channelCheck;
+            endtexttimer = (int)(playUI.manager.speakerClip.length);
             endTimeText.text = Mathf.Floor(endtexttimer / 60.0f).ToString("00") + ":" + (endtexttimer % 60).ToString("00");
 
             string[] combined = Path.GetFileName(playUI.manager.showtapeSegmentPaths[playUI.manager.currentShowtapeSegment]).Split(new string[] { " - " }, StringSplitOptions.None);
