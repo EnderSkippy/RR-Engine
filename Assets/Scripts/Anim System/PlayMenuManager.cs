@@ -137,7 +137,7 @@ public class PlayMenuManager : MonoBehaviour
         }
         else
         {
-            playUI.manager.referenceSpeaker.time = (section / 10.0f) * (playUI.manager.speakerClip.length / (float)playUI.manager.speakerClip.channels) * 2 / channelCheck;
+            playUI.manager.referenceSpeaker.time = (section / 10.0f) * playUI.manager.speakerClip.length;
         }
 
         playUI.manager.syncTvsAndSpeakers.Invoke();
