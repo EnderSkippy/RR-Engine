@@ -511,7 +511,7 @@ public class TimelineEditor : MonoBehaviour
     public void AudioVideoGetData()
     {
         Debug.Log("Audio Video Get Data");
-        audioLengthMax = uiShowtapeManager.speakerClip.length / uiShowtapeManager.speakerClip.channels;
+        audioLengthMax = uiShowtapeManager.speakerClip.length;
         viewZoomMin = 0;
         viewZoomMax = 20;
         if (viewZoomMax > audioLengthMax)

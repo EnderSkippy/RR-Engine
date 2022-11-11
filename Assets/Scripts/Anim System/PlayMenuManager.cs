@@ -107,7 +107,7 @@ public class PlayMenuManager : MonoBehaviour
             }
             else
             {
-                playSlider.value = playUI.manager.referenceSpeaker.time / (playUI.manager.referenceSpeaker.clip.length / (float)playUI.manager.referenceSpeaker.clip.channels) * 100;
+                playSlider.value = playUI.manager.referenceSpeaker.time / playUI.manager.speakerClip.length * 100;
             }
 
             if (nowtimer <= (float)(endtexttimer))
@@ -126,7 +126,7 @@ public class PlayMenuManager : MonoBehaviour
         }
         else
         {
-            playUI.manager.referenceSpeaker.time = (section / 10.0f) * (playUI.manager.referenceSpeaker.clip.length / (float)playUI.manager.referenceSpeaker.clip.channels);
+            playUI.manager.referenceSpeaker.time = (section / 10.0f) * playUI.manager.speakerClip.length;
         }
 
         playUI.manager.syncTvsAndSpeakers.Invoke();
@@ -153,7 +153,7 @@ public class PlayMenuManager : MonoBehaviour
             }
             else
             {
-                endtexttimer = (int)(playUI.manager.referenceSpeaker.clip.length / (float)playUI.manager.referenceSpeaker.clip.channels);
+                endtexttimer = (int)(playUI.manager.speakerClip.length);
             }
             endTimeText.text = Mathf.Floor(endtexttimer / 60.0f).ToString("00") + ":" + (endtexttimer % 60).ToString("00");
 
@@ -202,7 +202,7 @@ public class PlayMenuManager : MonoBehaviour
                     child.transform.localScale = Vector3.zero;
                 }
             }
-            endtexttimer = (int)(playUI.manager.referenceSpeaker.clip.length / playUI.manager.referenceSpeaker.clip.channels);
+            endtexttimer = (int)(playUI.manager.speakerClip.length);
             endTimeText.text = Mathf.Floor(endtexttimer / 60.0f).ToString("00") + ":" + (endtexttimer % 60).ToString("00");
 
             string[] combined = Path.GetFileName(playUI.manager.showtapeSegmentPaths[playUI.manager.currentShowtapeSegment]).Split(new string[] { " - " }, StringSplitOptions.None);
