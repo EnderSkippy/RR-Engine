@@ -21,23 +21,12 @@ public class PlayMenuManager : MonoBehaviour
     public Text speedText;
     public Slider playSlider;
     int endtexttimer = 0;
-    int channelCheck = 1;
     // Start is called before the first frame update
     public GameObject[] keepSizedList;
-
-
 
     // Update is called once per frame
     void LateUpdate()
     {
-        if (playUI.manager.speakerClip.channels == 1)
-        {
-            channelCheck = 2;
-        }
-        else
-        {
-            channelCheck = 1;
-        }
         if (playUI.manager.playMovements)
         {
             speedText.text = playUI.manager.referenceSpeaker.pitch + "x";
@@ -118,7 +107,7 @@ public class PlayMenuManager : MonoBehaviour
             }
             else
             {
-                playSlider.value = playUI.manager.referenceSpeaker.time / (playUI.manager.speakerClip.length * (float)playUI.manager.speakerClip.channels) * 200 / channelCheck;
+                playSlider.value = playUI.manager.referenceSpeaker.time / playUI.manager.speakerClip.length * 100;
             }
 
             if (nowtimer <= (float)(endtexttimer))
@@ -171,8 +160,8 @@ public class PlayMenuManager : MonoBehaviour
             //Title
             if (playUI.manager.useVideoAsReference)
             {
-                titleText.text = "Youtube Video";
-                authorText.text = "Test";
+                 titleText.text = "Youtube Video";
+                 authorText.text = "Test";
             }
             else
             {
